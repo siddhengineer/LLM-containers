@@ -24,7 +24,10 @@ spec:
               memory: 512Mi
 ---
 apiVersion: v1
-kind: Service 
+kind: Service
+metadata:
+  name: my-app-service
+spec:
   type: NodePort
   ports:
     - port: 8501
